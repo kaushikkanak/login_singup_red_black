@@ -1,8 +1,8 @@
 # login_signup
 
-A new Flutter project.
 
-## Getting Started
+![Screenshot_1625768810](https://user-images.githubusercontent.com/36784224/124973055-b098c080-e048-11eb-9979-784ba1db536b.png)
+![Screenshot_1625768813](https://user-images.githubusercontent.com/36784224/124973060-b1c9ed80-e048-11eb-8f5a-281e5c751a73.png)
 
 This project is a starting point for a Flutter application.
 
