@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: size.width * 0.09),
               child: Text(
-                'Create \nAccount',
+                'Create\nAccount',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
