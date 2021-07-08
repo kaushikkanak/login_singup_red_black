@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signup/Login/login.dart';
 import 'package:login_signup/constant.dart';
 import 'package:login_signup/signup/backgound.dart';
 
@@ -16,7 +17,24 @@ class Body extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(height: size.height * 0.22),
+            SizedBox(height: size.height * 0.072),
+            Padding(
+              padding: EdgeInsets.only(left: 10.0),
+              child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Login(),
+                      ),
+                    );
+                  },
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    color: colorwhite,
+                  )),
+            ),
+            SizedBox(height: size.height * 0.1),
             Padding(
               padding: EdgeInsets.only(left: size.width * 0.09),
               child: Text(
@@ -123,7 +141,37 @@ class Body extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: size.height * 0.2),
+            SizedBox(height: size.height * 0.04),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 20.0),
+                  width: size.width * 0.8,
+                  height: size.height * 0.12,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 2.0,
+                        padding: EdgeInsets.all(15.0),
+                        primary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      child: Text(
+                        'Submit',
+                        style: TextStyle(
+                          color: appPrimaryColor,
+                          letterSpacing: 1.5,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'OpenSans',
+                        ),
+                      ),
+                      onPressed: () {}),
+                ),
+              ],
+            ),
           ],
         ),
       ),

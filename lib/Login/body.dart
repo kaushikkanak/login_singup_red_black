@@ -76,7 +76,37 @@ class Body extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: size.height * 0.2),
+            SizedBox(height: size.height * 0.05),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 20.0),
+                  width: size.width * 0.8,
+                  height: size.height * 0.12,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 2.0,
+                        padding: EdgeInsets.all(15.0),
+                        primary: appPrimaryColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      child: Text(
+                        'Submit',
+                        style: TextStyle(
+                          color: colorwhite,
+                          letterSpacing: 1.5,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'OpenSans',
+                        ),
+                      ),
+                      onPressed: () {}),
+                ),
+              ],
+            ),
           ],
         ),
       ),
