@@ -172,6 +172,45 @@ class Body extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: size.height * 0.1),
+            Container(
+                alignment: Alignment.center, child: _buildLoginBtn(context)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLoginBtn(BuildContext context) {
+    double size = MediaQuery.of(context).size.width;
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Login(),
+          ),
+        );
+      },
+      child: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text: 'Dont\'t have an Account? ',
+              style: TextStyle(
+                color: colorwhite,
+                fontSize: size / 22,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            TextSpan(
+              text: 'Sign Up',
+              style: TextStyle(
+                color: appPrimaryColor,
+                fontSize: size / 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),

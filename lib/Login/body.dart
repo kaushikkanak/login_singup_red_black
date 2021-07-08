@@ -77,7 +77,10 @@ class Body extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: size.height * 0.05),
+            Padding(
+              padding: EdgeInsets.only(right: size.width * 0.09),
+              child: _buildForgotPasswordBtn(context),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -108,11 +111,24 @@ class Body extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: size.height * 0.2),
+            SizedBox(height: size.height * 0.21),
             Container(
                 alignment: Alignment.center, child: _buildLoginBtn(context)),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildForgotPasswordBtn(BuildContext context) {
+    return Container(
+      alignment: Alignment.centerRight,
+      child: TextButton(
+        onPressed: () {},
+        child: Text('Forgot Password?',
+            style: TextStyle(
+              color: textfieldlabel,
+            )),
       ),
     );
   }
@@ -134,7 +150,7 @@ class Body extends StatelessWidget {
             TextSpan(
               text: 'Dont\'t have an Account? ',
               style: TextStyle(
-                color: Colors.black,
+                color: colorwhite,
                 fontSize: size / 22,
                 fontWeight: FontWeight.w400,
               ),
@@ -142,7 +158,7 @@ class Body extends StatelessWidget {
             TextSpan(
               text: 'Sign Up',
               style: TextStyle(
-                color: colorwhite,
+                color: appPrimaryColor,
                 fontSize: size / 23,
                 fontWeight: FontWeight.bold,
               ),
