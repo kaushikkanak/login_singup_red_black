@@ -196,7 +196,7 @@ class Body extends StatelessWidget {
         text: TextSpan(
           children: [
             TextSpan(
-              text: 'Dont\'t have an Account? ',
+              text: 'Already have an Account? ',
               style: TextStyle(
                 color: colorwhite,
                 fontSize: size / 22,
@@ -204,7 +204,7 @@ class Body extends StatelessWidget {
               ),
             ),
             TextSpan(
-              text: 'Sign Up',
+              text: 'LogIn',
               style: TextStyle(
                 color: appPrimaryColor,
                 fontSize: size / 23,
